@@ -1,67 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background: #f4a261;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background: #f4a261;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .cuisine-links a {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    text-decoration: none;
-    background: #2a9d8f;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  text-decoration: none;
+  background: #2a9d8f;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .cuisine-links a:hover {
-    background: #264653;
+  background: #264653;
 }
 
 .recipes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .recipe {
-    width: 200px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    text-align: center;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
 }
 
 .recipe img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .recipe h3 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .recipe-link {
-    display: block;
-    padding: 10px;
-    background: #e76f51;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  display: block;
+  padding: 10px;
+  background: #e76f51;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .recipe-link:hover {
-    background: #d62828;
+  background: #d62828;
 }
