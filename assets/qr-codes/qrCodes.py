@@ -8,7 +8,8 @@ cuisines = {
     "Italian" : "https://faraz19m.github.io/DishDash/cuisines/italian.html",
     "Japanese": "https://faraz19m.github.io/DishDash/cuisines/japanese.html",
     "Luxembourgish" : "https://faraz19m.github.io/DishDash/cuisines/luxembourgish.html",
-    "Portugese" : "https://faraz19m.github.io/DishDash/cuisines/portugese.html"
+    "Portugese" : "https://faraz19m.github.io/DishDash/cuisines/portugese.html",
+    "Home" : "https://faraz19m.github.io/DishDash/"
 }
 
 for name, url in cuisines.items():
