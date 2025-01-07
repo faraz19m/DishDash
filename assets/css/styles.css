@@ -52,7 +52,10 @@ main {
 
 .recipe img {
   width: 100%;
-  height: auto;
+  height: 200px; /* Set a fixed height for uniform cropping */
+  object-fit: cover; /* Crop the image to fit the container */
+  object-position: center; /* Center the image within the container */
+  border-bottom: 1px solid #ddd; /* Optional: Add a separator between the image and content */
 }
 
 .recipe h3 {
