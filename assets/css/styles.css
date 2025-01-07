@@ -32,20 +32,22 @@ main {
 
 .recipes {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between; /* Ensures items are spaced evenly */
-  padding: 0 10px; /* Add padding to prevent content from touching screen edges */
+  flex-direction: column; /* Stack dishes vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  gap: 20px; /* Space between dishes */
+  min-height: 100vh; /* Make sure it takes full screen height */
+  padding: 0 10px;
 }
 
 .recipe {
-  flex: 1 1 calc(33.33% - 20px); /* Three items per row with gaps */
-  max-width: calc(33.33% - 20px); /* Prevents overflow */
+  width: 100%; /* Full width for smaller screens */
+  max-width: 400px; /* Limit the max width for larger screens */
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
-  box-sizing: border-box; /* Includes padding and borders in the width */
+  box-sizing: border-box;
 }
 
 .recipe img {
@@ -72,15 +74,13 @@ main {
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-  .recipe {
-    flex: 1 1 calc(50% - 20px); /* Two items per row */
-    max-width: calc(50% - 20px);
+  .recipes {
+    padding: 0; /* Remove extra padding for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .recipe {
-    flex: 1 1 calc(100% - 20px); /* One item per row */
-    max-width: calc(100% - 20px);
+    max-width: 100%; /* Make recipe boxes fill the screen width */
   }
 }
