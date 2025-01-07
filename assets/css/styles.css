@@ -34,14 +34,18 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-between; /* Ensures items are spaced evenly */
+  padding: 0 10px; /* Add padding to prevent content from touching screen edges */
 }
 
 .recipe {
-  width: 200px;
+  flex: 1 1 calc(33.33% - 20px); /* Three items per row with gaps */
+  max-width: calc(33.33% - 20px); /* Prevents overflow */
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
+  box-sizing: border-box; /* Includes padding and borders in the width */
 }
 
 .recipe img {
@@ -64,4 +68,19 @@ main {
 
 .recipe-link:hover {
   background: #d62828;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .recipe {
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe {
+    flex: 1 1 calc(100% - 20px); /* One item per row */
+    max-width: calc(100% - 20px);
+  }
 }
